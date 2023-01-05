@@ -1,0 +1,273 @@
+body {
+    min-width: 100vh;
+    max-height: 100vh;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+}
+
+.main__left {
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+}
+
+.main__right {
+    flex: 0.2
+}
+
+
+.main__videos {
+    flex-grow: 1;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+
+
+.main__right {
+    background-color: #242324;
+    border-left: 1px solid #3D3D42;
+}
+
+.main__controls__block {
+    display: flex;
+}
+
+.main__controls {
+    color: #D2D2D2;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: #1C1E20;
+}
+
+.ham__main__controls {
+    color: #D2D2D2;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: #1C1E20;
+}
+
+.main__controls__button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px;
+    min-width: 80px;
+    cursor: pointer;
+}
+
+.main__controls__button:hover {
+    background-color: #343434;
+    border-radius: 5px;
+}
+
+.main__controls__button i {
+    font-size: 24px;
+}
+
+.main__right {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__header {
+    padding-top: 5px;
+    color: #F5F5F5;
+    text-align: center;
+}
+
+.main__chat_window {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.messages {
+    color: white;
+    list-style: none;
+}
+
+.main__message_container {
+    padding: 22px 12px;
+    display: flex;
+}
+
+.main__message_container input {
+    flex-grow: 1;
+    background-color: transparent;
+    border: none;
+    color: #F5F5F5;
+}
+
+.leave_meeting {
+    color: #EB534B;
+}
+
+.unmute,
+.stop {
+    color: #CC3B33;
+}
+
+.ham img {
+    color: white;
+    width: 50px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.ham__chat {
+    display: none;
+}
+
+.ham__chatgo {
+    display: none;
+}
+
+.ham {
+    display: none;
+}
+
+.right_ham {
+    display: none;
+
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 918px) {
+    .main__controls {
+        display: none;
+    }
+
+    .ham__main__controls {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .main__right {
+        display: none;
+    }
+
+    .main__left {
+        min-width: 100vw;
+
+    }
+
+    .ham {
+        display: block;
+    }
+
+    .main__controls__block {
+        display: block;
+    }
+
+    .ham__chat {
+
+        background-color: #242324;
+        border-left: 1px solid #3D3D42;
+        flex: 0.2;
+        display: none;
+
+    }
+
+    .ham__controls__block {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .right_ham {
+        display: none;
+        position: absolute;
+        right: 0;
+        height: 100vh;
+    }
+
+    html,
+    body {
+        overflow-x: hidden;
+        width: 100%;
+        height: 100%;
+    }
+    #video-grid{
+        align-items: center;
+         flex-grow: 1;
+    }
+    video {
+        max-height: 150px;
+        max-width: 290px;
+    }
+
+}
+@media screen and (max-width: 390px) {
+    #video-grid{
+        align-items: unset !important;
+         flex-grow: 1 !important;
+         flex-direction: column !important;
+    }
+    video {
+        max-height: 150px !important;
+        max-width: 290px !important;
+    }
+}
+
+.right_hamshow {
+    display: block;
+}
+
+.ham__chatshow {
+    display: flex;
+    flex-direction: column;
+    /* transform: translate(10px); */
+}
+
+.cross {
+    position: absolute;
+    color: white;
+    font-size: 50px;
+    top: -19px;
+    margin-left: 8px;
+    display: none;
+}
+
+.showcross {
+
+    display: block !important;
+}
+
+.hamhide {
+    display: none;
+}
+
+.left_ham {
+    display: flex;
+}
+
+.controlls__ham img {
+    color: white;
+    width: 50px;
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+
+}
+
+.controls__cross {
+    position: absolute;
+    color: white;
+    font-size: 50px;
+    top: -19px;
+    display: none;
+    /* z-index: 1; */
+    right: 8px;
+}
